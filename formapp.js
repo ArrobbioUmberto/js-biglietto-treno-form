@@ -38,8 +38,9 @@ let decimalTotalKm = parseFloat(totalPrice.toFixed(2))
 
 console.log('questo è il prezzo del biglietto', decimalTotalKm)
 
-
+// SECONDA PARTE ESERCIZIO 
 // cambiare le scelte in minorenne, sconto over65 e nessuno sconto 
+// avere i dati tramite input e non prompt 
 
 
 
