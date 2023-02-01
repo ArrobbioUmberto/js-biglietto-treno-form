@@ -59,8 +59,13 @@ formBtnElement.addEventListener('click', function(){
 
    console.log(parseFloat(totalPrice.toFixed(2)))
 
+   const HTMLPrice = document.getElementById('realprice')
 
-   
+   HTMLPrice.innerHTML = totalPrice.toFixed(2) + '$'
+
+
+
+
 
     
 
