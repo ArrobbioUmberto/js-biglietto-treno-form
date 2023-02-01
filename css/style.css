@@ -40,12 +40,12 @@ main{
     padding: 20px;
 }
 
-#kilometers,#name,#surname,#discount, #price{
+/* #kilometers,#name,#surname,#discount, #price{
     font-size: 30px;
     color: white;
 
-}
-.text{
+} */
+/* .text{
     font-size: 20px;
     text-decoration: underline;
     font-style: italic;
@@ -69,4 +69,4 @@ main{
     color: white;
     font-size: 25px;
     line-height: 100px;
-}
+} */
