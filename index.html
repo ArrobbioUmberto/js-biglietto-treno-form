@@ -14,41 +14,11 @@
     </header>
     
     <main>
-
-        <!-- <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-30 km">
-                        <p class="text"> Km da percorrere</p>
-                        <p id="kilometers"></p>
-                    </div>
-                    <div class="col-30 user ">
-                        <p class="text"> Nome</p>
-                        <p id="name"></p>
-                        <p class="text"> Cognome</p>
-                        <p id="surname"></p>
-                    </div>
-                    <div class="col-20 sconto">
-                        <p class="text"> Sconto</p>
-                        <p id="discount"></p>
-                    </div>
-                    <div class="col-20 prezzo">
-                        <p class="text"> Ecco il tuo totale</p>
-                        <div class="prezzo-logo">
-                            <p id="price"></p>
-                            <span class="euro"> &euro; </span>
-                        </div>
-                    </div>
-                    <h1 class="goodbye">Buon viaggio e Buona fortuna con Trenitalia</h1>
-                </div>
-            </div>
-        </section> -->
-
-
         <section>
             <div class="container">
                 <div class="row flex-column mt-4">
                     <div class="col py-3">
+                        <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
                         <input id="firstname" type="text" name="name" class="form-control mb-2 " value="" placeholder="Il tuo nome ">
                         <input id="lastname" type="text" name="surname" class="form-control mb-2 " value="" placeholder="Il tuo cognome ">
                         <input id="km" type="number" name="km" class="form-control mb-2" value="" placeholder="Quanti km devi percorrere ? ">
@@ -65,7 +35,32 @@
                     </div>
                     <div class="col py-3 d-flex justify-content-between formbutton">
                         <input type="button" value="Calcola il prezzo" class="btn btn-primary">
-                        <h2 class="me-3">ECCO IL TUO PREZZO</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="text-center col-12">IL TUO BIGLIETTO</h1>
+                <h2 class="fs-5">DETTAGLIO PASSEGGERI</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>NOME PASSEGGERO</h3>
+                        <p id="user--name--surname"></p>
+                    </div>
+                    <div class="col">
+                        <p> Offerta</p>
+                        <p id="ticket" ></p>
+                    </div>
+                    <div class="col-2">
+                        <p>Carrozza</p>
+                        <p id="carrozza--number"></p>
+                    </div>
+                    <div class="col-2">
+                        <p>Codice CP</p>
+                        <p id="carrozza-key"></p>
+                    </div>
+                    <div class="col-2">
+                        <p>Costo biglietto</p>
+                        <p id="realprice" class="fs-3 text-white"></p>
                     </div>
                 </div>
             </div>
