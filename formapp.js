@@ -11,15 +11,15 @@
     // output del prwzzo finale va messo con max due decimali per indicare i centesimi del prezzo 
 
 
-let numberKm = parseFloat( prompt('Quanti chilometri devi percorrere?'))
-console.log('questi sono i km che vuole percorrere', numberKm)
-let passengerAge = parseInt (prompt('Quanti anni hai ?'))
-console.log('questa è l\'età del nostro passeggero', passengerAge)
-let firstName = prompt('Come ti chiami ?')
+
+
+let firstName = document.querySelector('.firstname')
 console.log( 'questo è il nome del passeggero', firstName)
-const ticketPrice = 0.21
-let lastName = prompt('Dimmi il tuo cognome')
+let lastName = document.querySelector('.lastname')
 console.log('questo è il cognome del passeggero', lastName)
+let numberKm = document.querySelector('.km')
+console.log('questi sono i km che vuole percorrere', numberKm)
+const ticketPrice = 0.21
 
 let totalPrice = numberKm * ticketPrice
 
