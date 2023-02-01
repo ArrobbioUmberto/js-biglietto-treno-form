@@ -43,8 +43,8 @@ formBtnElement.addEventListener('click', function(){
 
     let discountOld = 0.6
 
-    console.log(discountOld, discountYoung)
-
+    // console.log(discountOld, discountYoung)
+   
    switch(userAge){
     case 'Minorenne':
         totalPrice = (numberKm * ticketPrice) * discountYoung
@@ -57,7 +57,7 @@ formBtnElement.addEventListener('click', function(){
         break
    }
 
-   console.log(parseFloat(totalPrice.toFixed(2)))
+//    console.log(parseFloat(totalPrice.toFixed(2)))
 
    const HTMLPrice = document.getElementById('realprice')
 
@@ -69,35 +69,31 @@ formBtnElement.addEventListener('click', function(){
    HTMLUserName.innerHTML = firstName 
    HTMLUserSurname.innerHTML = lastName
 
+   const HTMLDiscount = document.getElementById('ticket')
+
+   switch(userAge){
+    case 'Minorenne':
+        HTMLDiscount.innerHTML = '20%'
+        break
+    case 'Nessuno':
+        HTMLDiscount.innerHTML = 'Nessuna'
+        break
+    case 'Over65':
+        HTMLDiscount.innerHTML = '40%'
+        break
+   }
+
+   const carrozzaNumberHTML = document.getElementById('carrozza--number')
+   const carrozzaKeyHTML = document.getElementById('carrozza--key')
+
+   let numeriRandom = Math.floor(Math.random()*10)
+
+
+   carrozzaNumberHTML.innerHTML = numeriRandom
+   let codiceRandom = Math.floor(Math.random()*10000)
+   carrozzaKeyHTML.innerHTML = codiceRandom
+
+   
    
 
-
-
-
-
-    
-
-    
-
-
-
 })
-// if (passengerAge < 18){
-//     totalPrice = (numberKm * ticketPrice) * discountYoung
-// } else if (passengerAge > 64){
-//     totalPrice = (numberKm * ticketPrice) * discountOld
-// }
-// else {
-//     totalPrice = numberKm * ticketPrice
-// }
-// let decimalTotalKm = parseFloat(totalPrice.toFixed(2))
-
-// console.log('questo è il prezzo del biglietto', decimalTotalKm)
-
-// SECONDA PARTE ESERCIZIO 
-// cambiare le scelte in minorenne, sconto over65 e nessuno sconto 
-// avere i dati tramite input e non prompt 
-
-
-
-
