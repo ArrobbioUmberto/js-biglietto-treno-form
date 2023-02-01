@@ -63,6 +63,14 @@ formBtnElement.addEventListener('click', function(){
 
    HTMLPrice.innerHTML = totalPrice.toFixed(2) + '$'
 
+   const HTMLUserName = document.getElementById('user--name')
+   const HTMLUserSurname = document.getElementById('user--surname')
+
+   HTMLUserName.innerHTML = firstName 
+   HTMLUserSurname.innerHTML = lastName
+
+   
+
 
 
 
