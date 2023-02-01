@@ -41,28 +41,3 @@ console.log('questo è il prezzo del biglietto', decimalTotalKm)
 
 
 
-// BONUS 
-
-// prendo il p con l'id kilometers 
-
-// const HTMLKm = document.getElementById('kilometers')
-
-// HTMLKm.innerHTML = numberKm
-
-// faccio la stessa cosa per gli altri spazi del biglietto 
-
-// const HTMLName = document.getElementById('name')
-
-// HTMLName.innerHTML = firstName
-
-// const HTMLSurname = document.getElementById('surname')
-
-// HTMLSurname.innerHTML = lastName
-
-// const HTMLDiscount = document.getElementById ('discount')
-
-// HTMLDiscount.innerHTML = discountYoung
-
-// const HTMLPrice = document.getElementById('price')
-
-// HTMLPrice.innerHTML = totalPrice
