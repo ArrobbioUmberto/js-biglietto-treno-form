@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-header{
-    background-size: cover;
-    background-position: top;
-    width: 100%;
-    height: 300px;
-}
 main{
     width: 100%;
     height: calc(100vh - 300px);
@@ -19,7 +13,7 @@ main{
 }
 .container{
     max-width: 552px;
-    height: 52vh;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     background-color: red;
@@ -37,6 +31,10 @@ main{
 .col-20{
     flex-basis: 20%;
     padding: 20px;
+}
+.background{
+    background-color: #8a8a8a;
+    border-radius: 25px;
 }
 
 /* #kilometers,#name,#surname,#discount, #price{
