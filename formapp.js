@@ -31,33 +31,34 @@ formBtnElement.addEventListener('click', function(){
     console.log('questo è il cognome del passeggero', lastName)
 
     let numberKm = numberKmElement.value
-    console.log('questi sono i km che vuole percorrere', numberKm)
+    let numberIntKm = parseFloat(numberKm)
+    console.log('questi sono i km che vuole percorrere', numberIntKm)
 
     let userAge = ageSelector.value
     console.log( userAge)
 
-    let totalPrice = numberKm * ticketPrice
-    // console.log( totalPrice)
+    let totalPrice = parseFloat(numberIntKm * ticketPrice)
+    console.log(parseFloat(totalPrice.toFixed(2)))
 
     let discountYoung = 0.8
 
     let discountOld = 0.6
 
-    // console.log(discountOld, discountYoung)
+    console.log(discountOld, discountYoung)
    
    switch(userAge){
     case 'Minorenne':
-        totalPrice = (numberKm * ticketPrice) * discountYoung
+        totalPrice = (numberIntKm * ticketPrice) * discountYoung
         break
     case 'Nessuno':
         totalPrice = totalPrice
         break
     case 'Over65':
-        totalPrice = (numberKm * ticketPrice) * discountOld
+        totalPrice = (numberIntKm * ticketPrice) * discountOld
         break
    }
 
-//    console.log(parseFloat(totalPrice.toFixed(2)))
+   console.log(parseFloat(totalPrice.toFixed(2)))
 
    const HTMLPrice = document.getElementById('realprice')
 
